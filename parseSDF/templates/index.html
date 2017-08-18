@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--{% load static %}-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Convert SDF to CSV</title>
+    </head>
+    <body>
+        <div>
+            <h3>Convert SDF to CSV</h3>
+            <form action="/result/" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    {{ form.file.errors }}
+                    <label>Input File:</label>
+                    {{ form.file }}
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit"/>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

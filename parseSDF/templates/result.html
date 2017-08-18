@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Result</title>
+</head>
+<body>
+    <h2>There are {{count}} records totally.</h2>
+    <div>
+        <p>You can download from <a href="{% static relative_path %}">here</a></p>
+    </div>
+</body>
+</html>
