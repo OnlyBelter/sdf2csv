@@ -1,5 +1,5 @@
 # sdf2csv
-A simple Django project, this project can convert a file's format from sdf to csv.
+A simple Django project, this project can convert a file's format from sdf to csv online.
 
 
 # Dependencies
@@ -10,17 +10,20 @@ You also need:
 `pandas`
 
 # Basic idea
-I upload a `.sdf` file convert it to a `.csv` file, then I count how many lines in the result and give a link to download this `.csv` file.
+I upload a `.sdf` file and convert it to a `.csv` file, then I count how many lines in the result and give a link to download this `.csv` file.
 
+The result file is stored on server file system(backend), the download link looks like: `http://localhost:8000/static/downloads/Aug-18-2017_1523/result2.csv`
 
 # How to
 1. Create a Django Project and App
 
-`django-admin startproject sdf2csv`
+```
+django-admin startproject sdf2csv
 
-`cd sdf2csv`
+cd sdf2csv
 
-`python manage.py startapp parseSDF`
+python manage.py startapp parseSDF
+```
 
 2. Create a file `forms.py` in dir `sdf2csv/parseSDF` to define a form that is needed by input UI
 
@@ -46,6 +49,7 @@ STATICFILES_DIRS = [
 
 4. Create a folder `templates` in dir `parseSDF`, 
 then we create two `.html` files in this folder
+
 - index.html
 - result.html
 
