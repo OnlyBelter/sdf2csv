@@ -69,6 +69,15 @@ urlpatterns = [
 
 6. Write code in file `parseSDF/views.py`, then it can work
 
+7. Deployment static files
+django.contrib.staticfiles provides a convenience management command for gathering static files in a single directory so you can serve them easily.
+
+Run the collectstatic management command:
+
+`python manage.py collectstatic`
+
+This will copy all files from your static folders into the `STATIC_ROOT` directory.
+
 # Run it locally
 Run `python manage.py runserver 0.0.0.0:8000`
 
