@@ -47,6 +47,8 @@ STATICFILES_DIRS = [
 
 ```
 
+Also create a folder `static` in dir `sdf2csv/sdf2csv`, and two subfolders `static_dirs` & `static_root` in `static`.
+
 4. Create a folder `templates` in dir `parseSDF`, 
 then we create two `.html` files in this folder
 
