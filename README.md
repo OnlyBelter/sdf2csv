@@ -12,7 +12,9 @@ You also need:
 # Basic idea
 I upload a `.sdf` file and convert it to a `.csv` file, then I count how many lines in the result and give a link to download this `.csv` file.
 
-The result file is stored on server file system(backend), the download link looks like: `http://localhost:8000/static/downloads/Aug-18-2017_1523/result2.csv`
+The result file is stored on server file system(backend), the download url looks like: 
+
+### `http://localhost:8000/static/downloads/Aug-18-2017_1523/result2.csv`
 
 # How to
 1. Create a Django Project and App
